@@ -1,0 +1,74 @@
+<!doctype html>
+<!--Nikola Zorica-->
+<html lang="en">
+<head>
+<title>Comp1100</title> 
+<meta charset = "UTF-8">
+<link rel ="stylesheet" type = "text/css" href = "./CSS/E-Portfolio.css" />
+</head>
+<body>
+Nikola Zorica E-Portfolio
+<h3>Course description</h3>
+<h4>Introduction to C++</h4>
+<p>
+This course provides an introduction to programming using the C++ language. The course introduces the syntax and usage of C++.  A disciplined approach to program development and to producing readable programs is emphasized. Topics covered include variables, data types, assignment/arithmetic, repetition, selection, arrays and output files.
+</p>
+<h3> Sample Assigment</h3>
+
+<pre>
+	<code>
+		#include &lt;iostream&gt;
+		#include &lt;string&gt;
+		#include &lt;iomanip&gt;
+		using namespace std;
+
+		/*Nikola Zorica
+		This program allows the user to enter their name, how much a loan they got was and what their montly payment is.
+		it will use this information to calculate how many months they will be paying the loan back over how much the processing fee is and what their final payment will be*/
+
+
+		int main()
+		{
+			//Housekeeping
+			string name;
+			int loan;
+			int months;
+			int monthlyPayment;
+			double processFee;
+			double totalOwed;
+			double finalPayment;
+			double extraLoanPayment;
+			const double PROCESSINGPERCENT = 0.05;
+			cout << fixed << setprecision(2);
+
+
+			//Input
+			cout << "Enter your name ";
+			getline(cin, name);
+			cout << "Enter your loan amount ";
+			cin >> loan;
+			cout << "Enter your montly payment ";
+			cin >> monthlyPayment;
+			
+
+			//Process
+			processFee = PROCESSINGPERCENT*loan;
+			totalOwed = processFee + loan;
+			months = loan / monthlyPayment;
+			extraLoanPayment = loan % monthlyPayment;
+			finalPayment = processFee + extraLoanPayment;
+
+
+			//output
+			cout << left << setw(20) << "Name" << setw(12) << right << "Loan Amount" << setw(20) << "Processing Fee" << setw(12) << "Total Owed" << endl << endl;
+			cout << left << setw(20) << name << setw(12) << right << loan << setw(20) << processFee << setw(12) << totalOwed << endl;
+			cout << "You will need to make " << months << " equal payments of " << monthlyPayment << " with a final payment of " << finalPayment << endl << endl;
+			cout << "program ended successfully" << endl;
+			system("pause");
+	</code>
+</pre>
+<footer>
+	Feel free to contact me at any time<a href ="mailto:NZorica30@studnet.sl.on.ca">NZorica30@studnet.sl.on.ca</a>
+</footer>
+</body>
+</html>
