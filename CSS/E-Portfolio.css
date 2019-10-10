@@ -1,0 +1,120 @@
+/*
+https://color.adobe.com/Creative-Colors-1-color-theme-7323337/?
+Creative Colors 1
+#FFDBE8 light pink
+#E81A16 Red
+#FF3C1C orange
+#E84E16 brown-orange
+#FF8D45 tan
+*/
+body
+{
+	background-color:#FFDBE8;
+	font-size:medium;
+	font-family:"Arial","Times New Roman","serif";
+	color:#E81A16;
+}
+h1
+{
+	font-size:xx-large;
+	font-family:"Trebuchet MS";
+}
+h2
+{
+	font-size:x-large;
+	font-family:"Trebuchet MS";
+}
+h3
+{
+	font-size:large;
+	font-family:"Trebuchet MS";
+}
+h4
+{
+	font-size:medium;
+	font-style:italic;
+	font-family:"Trebuchet MS";
+}
+ol
+{
+	list-style-type:upper-alpha;
+}
+table
+{
+	border-style:solid;
+	border-color:blue;
+	border-width:medium;
+	background-color:white;
+	border-spacing:0;
+	width:55%;
+}
+th
+{
+	border-style:solid;
+	background-color:yellow;
+	border-color:palegoldenrod;
+	border-width:thin;
+}
+td
+{
+	border-spacing:0;
+	border-style:solid;
+	border-color:#FF8D45;
+	border-width:thin;
+	
+}
+td:nth-child(1)
+{
+	width:25%;
+}
+td:nth-child(2)
+{
+	width:75%;
+}
+fieldset
+{
+	background-color:#FF8D45;
+	border:#00B2B1 solid thick
+}
+.top
+{
+	text-align:center;
+	font-size:1.8em;
+	margin-bottom:1em;
+	padding-bottom:1em;
+	border-bottom:#FF8D45 double thick
+}
+.leftside
+{
+	width:18%;
+	float:left;
+}
+.rightside
+{
+	width:80%;
+	float:left;
+}
+.bottom
+{
+	clear:both;
+}
+.main
+{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.portrait
+{
+	float:left;
+	width:20%;
+}
+.bio
+{
+	float:left;
+	width:75%;
+}
+.space
+{
+	margin-left:1.5em;
+}
