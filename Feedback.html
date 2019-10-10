@@ -1,0 +1,77 @@
+<!doctype html>
+<!--Nikola Zorica-->
+<html lang="en">
+	<head>
+		<title>Feedback</title> 
+		<meta charset = "UTF-8">
+		<link rel ="stylesheet" type = "text/css" href = "./CSS/E-Portfolio.css" />
+		<script type="text/javascript" src ="Mysite.js"></script>
+	</head>
+	<body>
+		<div class = "top">
+			Nikola Zorica E-Portfolio
+		</div>
+		<div class = "main">
+			<div class = "leftside">
+				<a href = "index.html"><img src = "./imgs/HOMEbutton.png" alt = "Home"/></a>
+				<a href = "education.html"><img src = "./imgs/EDbutton.png" alt = "Education"/></a>
+				<a href = "Feedback.html"><img src = "./imgs/FEEDbutton.png" alt = "FeedBack"/></a>
+			</div>
+			<div class = "rightside">
+				<fieldset>
+					<legend>Feedback</legend>
+					<p>
+						<label>First Name</label>
+						<input type = "text" id = "FName"/>
+						<label>Last Name</label>
+						<input type = "text" id = "LName"/>
+					</p>
+					<p>
+						<label>What was your favourite page?</label>
+					</p>
+					<select id = "FavPage" size = "5">
+						<option value = "Home">Home</option>
+						<option value = "Education">Education</option>
+						<option value = "COMP1100">COMP 1100</option>
+						<option value = "COMP205">COMP 205</option>
+						<option value = "COMM4">COMM 4</option>
+					</select>
+					<p>
+						<label>What pages did you visit (check all that apply)?</label>
+					</p>
+					<p>
+						<label>Home</label>
+						<input type = "checkbox" id = "HomeVisit" unchecked>
+						<label class = "space" >Education</label>
+						<input type = "checkbox" id = "EduVisit" unchecked>
+						<label class = "space" >COMP 1100</label>
+						<input type = "checkbox" id = "COMP1100Visit" unchecked>
+						<label class = "space" >COMP 205</label>
+						<input type = "checkbox" id = "COMP205Visit" unchecked>
+						<label class = "space" >COMM 4</label>
+						<input type = "checkbox" id = "COMM4Visit" unchecked>
+					</p>
+					<p>
+						<label>Rate Site</label>
+						<input type = "radio" name = "SiteRating" value = "Excelent"/>Excelent
+						<input type = "radio" name = "SiteRating" value = "Average"/>Average
+						<input type = "radio" name = "SiteRating" value = "Poor"/>Poor
+					</p>
+					<p>
+						<label>Additional Comments</label>
+					</p>
+					<p>
+					<textarea id = "myviewpoint" rows = "5" cols = "80"></textarea>
+					</p>
+					<p id = "ChangeMe">
+						Type in your answers and click Submit Feedback
+					</p>
+					<p>
+						<button type = "button" onclick = "changetext()">Submit Feedback</button>
+						<button type = "button">Clear Data</button>
+					</p>
+				</fieldset>
+			</div>
+		</div>
+	</body>
+</html>
